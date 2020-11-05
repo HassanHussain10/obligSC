@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="SnowChallenge..css">
+</head>
+<body>
+
+
+<img src="Skjermbilde.PNG">
+<div id="boks">
+    <h2> Menu </h2>
+
+    <li> <a href="SnowballChallenge.html"> Home Page </a> </li>
+    <li> <a href="inputsc.html">Newsletter Registration</a> </li>
+
+</div>
+
+<h2>Add your E-mail below:</h2>
+
+
+<form id="form">
+    <label for="newsletter"></label>
+<input id="newsletter" type="email" required>
+<input type="submit" id="sendinn">
+
+</form>
+
+<p id="tekst"></p>
+<script>
+    var form = document.getElementById("form");
+    var newsletter = document.getElementById("newsletter");
+    var tekst = document.getElementById("tekst");
+    var sendinn = document.getElementById("sendinn");
+
+
+    form.onsubmit = function (evt){
+        evt.preventDefault();
+        tekst.innerHTML += "Thank you for the registration!";
+
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>
